@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela inicial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <footer id="footer">
+        <h1>SEJA BEM-VINDO À TELA INICIAL</h1>
+    </footer>
+
+    <div class="form">
+        <form onsubmit="return false;">
+            <h1 id="h1mn">Antes de prosseguir, informe se você Vai repor ou adicionar um jogo</h1>
+
+            <label>
+                <input type="radio" id="repor" name="tipo" value="a">
+                Repor
+            </label>
+
+            <label>
+                <input type="radio" id="adicionar" name="tipo" value="b">
+                Adicionar
+            </label>
+
+            <br><br>
+
+            <input type="button" onclick="slam()" value="Entrar">
+
+            <br><br>
+            <a href="jogos2.php">Jogos</a>
+            <br><br>
+            <a href="index.html">Voltar a pagina inicial</a>
+        </form>
+    </div>
+
+    <script>
+        function slam() {
+            let value = document.querySelector('input[name="tipo"]:checked');
+
+            if (!value) {
+                alert("O campo não pode ficar vazio");
+                return;
+            }
+
+            if (value.value === "a") {
+                window.location.href = "repositor1.html";
+            } else {
+                window.location.href = "repositor2.html";
+            }
+        }
+    </script>
+
+</body>
+</html>

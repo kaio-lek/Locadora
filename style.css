@@ -1,0 +1,106 @@
+body {
+    background-color: #1f3152;
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e8f1ff;
+}
+#footer {
+    background: linear-gradient(90deg, rgb(57, 105, 207), rgb(81, 161, 207));
+    text-align: center;
+    padding: 2vh 0;
+    width: 100%;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.form {
+    background: rgb(44, 72, 124);
+    width: 90%;
+    max-width: 450px;
+    margin: 5vh auto;
+    padding: 3vh 2vw;
+    border-radius: 1.8vh;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2 {
+    color: #d8e8ff;
+    text-align: center;
+    margin-bottom: 2vh;
+    font-weight: 600;
+}
+
+/* ======= Inputs ======= */
+input[type="text"],
+input[type="number"],
+input[type="radio"] {
+    margin-top: 0.8vh;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgb(41, 60, 88);
+    color: #e8f1ff;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    background: rgb(51, 80, 120);
+    box-shadow: 0 0 8px #8abaff;
+}
+
+input::placeholder {
+    color: rgb(168, 216, 255);
+}
+
+input[type="button"] {
+    width: 60%;
+    padding: 10px;
+    margin-top: 1vh;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #6fa8ff, #3d7de0);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #80b4ff, #4b8af0);
+}
+
+a {
+    color: #8cd3ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+}
+
+hr {
+    border: 2px solid #8abaff;
+    width: 80%;
+    margin: 3vh auto;
+    border-radius: 5px;
+}
