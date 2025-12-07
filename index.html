@@ -13,7 +13,7 @@
     </footer>
 
     <div class="form">
-        <form onsubmit="return false;">
+        <form>
             <h1 id="h1mn">Antes de prosseguir, informe se você é um Repositor ou um Cliente</h1>
 
             <label>
@@ -36,7 +36,6 @@
 
     <script>
         function slam() {
-            // ❗ ERRO CORRIGIDO AQUI: Input → input
             let value = document.querySelector('input[name="tipo"]:checked');
 
             if (!value) {
